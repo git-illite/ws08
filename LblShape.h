@@ -21,7 +21,7 @@ namespace sdds {
 		LblShape();
 		LblShape(const char* label);
 		std::istream& getSpecs(std::istream& istr);
-		virtual ~LblShape();
+		~LblShape();
 		LblShape(const LblShape&) = delete;
 		LblShape& operator=(const LblShape&) = delete;
 	protected:

@@ -44,6 +44,7 @@ namespace sdds {
 	{
 		string text;
 		getline(istr, text, ',');
+		delete[] m_label;
 		m_label = new char[strlen(text.c_str())+1];
 		strcpy(m_label, text.c_str());
 		return istr;
